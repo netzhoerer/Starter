@@ -21,6 +21,7 @@ function serve(done) {
 	livereload.listen();
 	done();
 }
+// @todo: https://browsersync.io/docs/gulp
 
 const handleError = (done) => {
 	return function(err) {
