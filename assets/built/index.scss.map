@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.scss"],"names":[],"mappings":"AAAA,KACI,cAAe,CACf,UAAW,CAEX,EACI,YACJ,CACJ","file":"index.scss","sourcesContent":["body {\n    background: red;\n    color: blue;\n\n    p {\n        color: orange;\n    }\n}\n"]}

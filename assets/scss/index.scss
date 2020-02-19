@@ -1,0 +1,14 @@
+:root {
+    --color-gray: #545454;
+    --violet: rebeccapurple;
+}
+
+body {
+    background: red;
+    color: var(--color-gray);
+
+
+    p {
+        color: var(--violet);
+    }
+}
