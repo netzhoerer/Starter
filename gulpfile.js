@@ -39,10 +39,10 @@ function serve(done) {
   done();
 }
 
-function browserSyncReload(done) {// eslint-disable-line
+const browserSyncReload = (done) => {// eslint-disable-line
   browserSync.reload();
   done();
-}
+};
 
 const handleError = (done) => (err) => {
   if (err) {
@@ -50,33 +50,6 @@ const handleError = (done) => (err) => {
   }
   return done(err);
 };
-
-function hbs(done) {
-  pump(
-    [src(['*.hbs', '**/**/*.hbs', '!node_modules/**/*.hbs']), browserSync.stream()],
-    handleError(done),
-  );
-}
-
-function css(done) {
-  const processors = [
-    easyimport,
-    customProperties({ preserve: false }),
-    colorFunction(),
-    autoprefixer(),
-    cssnano(),
-  ];
-
-  pump(
-    [
-      src('assets/css/*.css', { sourcemaps: true }),
-      postcss(processors),
-      dest('assets/built/', { sourcemaps: '.' }),
-      browserSync.stream(),
-    ],
-    handleError(done),
-  );
-}
 
 function scss(done) {
   const processors = [
@@ -148,11 +121,10 @@ function zipper(done) {
   );
 }
 
-const cssWatcher = () => watch('assets/css/**', css);
 const jsWatcher = () => watch('assets/js/**', js);
 const lintWatcher = () => watch('assets/js/**', lint);
 const scssWatcher = () => watch('assets/scss/**', scss);
-const hbsWatcher = () => watch(['*.hbs', '**/**/*.hbs', '!node_modules/**/*.hbs'], hbs);
+const hbsWatcher = () => watch(['*.hbs', '**/**/*.hbs', '!node_modules/**/*.hbs'], browserSyncReload);
 const watcher = parallel(scssWatcher, hbsWatcher, jsWatcher, lintWatcher);
 const build = series(scss, js, lint);
 const dev = series(build, serve, watcher);
