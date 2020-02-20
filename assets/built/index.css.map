@@ -1,1 +1,12 @@
-{"version":3,"sources":["index.scss"],"names":[],"mappings":"AAKA,IAAA,CAAA;EACI,UAAA,EAAA,GAAe;EACf,KAAA,EAAA,OAAwB,GAM5B;EARA,AAKI,IALJ,CAKI,CAAA,CAAA;IACI,KAAA,EAAA,IACJ,GACJ","file":"index.css","sourcesContent":[":root {\n    --color-gray: #545454;\n    --violet: rebeccapurple;\n}\n\nbody {\n    background: red;\n    color: var(--color-gray);\n\n\n    p {\n        color: var(--violet);\n    }\n}\n"]}
+{
+  "version": 3,
+  "sources": [
+    "index.scss"
+  ],
+  "names": [ ],
+  "mappings": "AAKA,IAAA,CAAA;EACI,UAAA,EAAA,GAAe;EACf,KAAA,EAAA,OAAwB,GAgB5B;EAlBA,AAKI,IALJ,CAKI,CAAA,CAAA;IACI,KAAA,EAAA,IACJ,GAEA;EATJ,AASI,IATJ,CASI,QAAA,CAAA;IACI,UAAA,EAAA,OAAqB;IACrB,QAAA,EAAA,KAAe;IACf,KAAA,EAAA,IAAW;IACX,IAAA,EAAA,CAAO;IACP,GAAA,EAAA,CAAM;IACN,KAAA,EAAA,CAAQ;IACR,UAAA,EAAA,CAAA,CAAA,IAAA,CAAA,IAAA,CAAA,kBAAA,GAER",
+  "file": "index.css",
+  "sourcesContent": [
+    ":root {\n    --color-gray: #545454;\n    --violet: rebeccapurple;\n}\n\nbody {\n    background: red;\n    color: var(--color-gray);\n\n\n    p {\n        color: var(--violet);\n    }\n\n    .gh-head {\n        background: cadetblue;\n        position: fixed;\n        width: 100%;\n        left: 0;\n        top: 0;\n        right: 0;\n        box-shadow: 0 10px 10px rgba(black, 0.2);\n    }\n}\n"
+  ]
+}

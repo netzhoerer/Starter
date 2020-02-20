@@ -3,4 +3,14 @@ body {
   color: #545454; }
   body p {
     color: #639; }
+
+body .gh-head {
+  background: #5f9ea0;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
 /*# sourceMappingURL=index.css.map */

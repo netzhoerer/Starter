@@ -1,14 +1,32 @@
 :root {
-    --color-gray: #545454;
-    --violet: rebeccapurple;
+  --color-gray: #545454;
+  --violet: rebeccapurple;
 }
 
 body {
-    background: red;
-    color: var(--color-gray);
+  background: red;
+  color: var(--color-gray);
 
+  p {
+    color: var(--violet);
+  }
 
-    p {
-        color: var(--violet);
+  strong {
+    cursor: pointer;
+
+    &.blub {
+      font-size: 20px;
+      color: firebrick;
     }
+  }
+
+  .gh-head {
+    background: cadetblue;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    box-shadow: 0 10px 10px rgba(black, 0.2);
+  }
 }

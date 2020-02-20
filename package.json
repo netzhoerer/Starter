@@ -44,21 +44,38 @@
     "bugs": "https://github.com/TryGhost/Starter/issues",
     "contributors": "https://github.com/TryGhost/Starter/graphs/contributors",
     "devDependencies": {
-        "autoprefixer": "9.7.3",
+      "@babel/core": "^7.8.4",
+      "@babel/preset-env": "^7.8.4",
+      "autoprefixer": "^9.7.4",
+      "babel-eslint": "^10.0.3",
+      "browser-sync": "^2.26.7",
+      "bs-console-qrcode": "^1.0.3",
+      "bs-eslint-message": "0.0.3",
         "cssnano": "4.1.10",
+      "eslint": "^6.8.0",
+      "eslint-config-airbnb": "^18.0.1",
+      "eslint-formatter-friendly": "^7.0.0",
+      "eslint-plugin-import": "^2.20.1",
+      "eslint-plugin-jsx-a11y": "^6.2.3",
+      "eslint-plugin-react": "^7.18.3",
+      "eslint-plugin-react-hooks": "^2.4.0",
         "gscan": "2.11.0",
         "gulp": "^4.0.2",
-        "gulp-livereload": "4.0.1",
+      "gulp-babel": "^8.0.0",
+      "gulp-cli": "^2.2.0",
+      "gulp-concat": "^2.6.1",
+      "gulp-eslint": "^6.0.0",
+      "gulp-livereload": "^4.0.2",
         "gulp-postcss": "8.0.0",
         "gulp-sass": "^4.0.2",
         "gulp-sourcemaps": "2.6.5",
         "gulp-uglify": "3.0.2",
         "gulp-util": "3.0.8",
         "gulp-watch": "5.0.1",
-        "gulp-zip": "5.0.0",
+      "gulp-zip": "^5.0.1",
         "node-sass": "^4.13.1",
         "postcss-color-function": "4.1.0",
-        "postcss-custom-properties": "9.0.2",
+      "postcss-custom-properties": "^9.1.1",
         "postcss-easy-import": "3.0.0"
     },
     "browserslist": [
@@ -88,6 +105,8 @@
         }
     },
     "dependencies": {
-        "postcss-scss": "^2.0.0"
+      "beeper": "^2.0.0",
+      "postcss-scss": "^2.0.0",
+      "pump": "^3.0.0"
     }
 }
